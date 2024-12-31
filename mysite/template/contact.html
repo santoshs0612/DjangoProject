@@ -9,22 +9,22 @@
 <form method= "post" action ="/contact">
     {% csrf_token %}
     <div class="form-group">
-      <label for="exampleFormControlInput1">Name</label>
+      <label for="name">Name</label>
       <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Full Name">
     </div>
     <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
+        <label for="email">Email address</label>
         <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Phone Number</label>
+        <label for="number">Phone Number</label>
         <input type="phone" class="form-control" id="number" name="number" placeholder="Enter Mobile Number">
       </div>
     <div class="form-group">
-      <label for="exampleFormControlTextarea1">Deccription</label>
-      <textarea class="form-control" id="dec" name="dec" rows="3"></textarea>
+      <label for="desc">Deccription</label>
+      <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
     </div>
-    <button type="button" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
 {% endblock body %}
