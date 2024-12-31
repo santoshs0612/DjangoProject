@@ -17,7 +17,7 @@ def services(request):
 
 def contact(request):
     # return HttpResponse("This is about Contact Page")
-    print(request)
+    # print(request)
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get("email")
